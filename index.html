@@ -71,6 +71,7 @@
 
 .row {
     margin: 0.7rem 0;
+    font-family: sf-pro-text_regular;
 }
 
 .row:after {
@@ -80,10 +81,15 @@
 }
 
 
+.row a {
+    text-decoration: none;
+}
+
 /* row-1 */
 .row-1-col-1,
 .row-1-col-2 {
     height: 36.5rem;
+    overflow: hidden;
 }
 
 .row-1-col-1 .inner-content {
@@ -93,6 +99,20 @@
     background-size: 100% 100%;
     height: 100%;
     text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.row-1-col-1-headline {
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: sf-pro-display_regular;
+    /* font-family: sf-pro-text_regular; */
+    margin-top: 53px;
+    padding-bottom: 10px;
 }
 
 .row-1-col-2 .inner-content {
@@ -102,12 +122,31 @@
     background-size: 100% 100%;
     height: 100%;
     text-align: center;
+    padding-top: 40px;
+}
+
+.row-1-col-2-subhead{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family:sf-pro-display_regular;
+}
+
+.row-1-col-2-links{
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: sf-pro-display_regular;
+    margin-top: .7em;
 }
 
 /* row-2 */
 .row-2-col-1,
 .row-2-col-2 {
     height: 36.5rem;
+    overflow: hidden;
 }
 
 .row-2-col-1 .inner-content {
@@ -119,6 +158,25 @@
     text-align: center;
 }
 
+.row-2-col-1-subhead{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family:sf-pro-display_regular;
+    margin-top: 4px;
+}
+
+.row-2-col-1-links{
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family:sf-pro-display_regular;
+    margin-top: .7em;
+    text-align: center;
+}
+
 .row-2-col-2 .inner-content {
     background-image: url('images/apple-token.png');
     background-repeat: no-repeat;
@@ -126,22 +184,65 @@
     background-size: 100% 100%;
     height: 100%;
     text-align: center;
+    padding-top: 55px;
 }
 
+.row-2-col-2-subhead{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family:sf-pro-display_regular;
+    margin-top: 4px;
+}
+
+.row-2-col-2-links{
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family:sf-pro-display_regular;
+    margin-top: .7em;
+    text-align: center;
+}
 
 /* row-3 */
 .row-3-col-1,
 .row-3-col-2 {
     height: 36.5rem;
+    overflow: hidden;
 }
 
 .row-3-col-1 .inner-content {
-    margin: 0 0.35rem 0 0.7rem;
+    margin: 0 0.35rem 0.7rem;
     background-image: url('images/promo-ad.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100%;
     text-align: center;
+    padding-top:57px;
+}
+
+.row-3-col-1-subhead{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family:sf-pro-display_regular;
+    color:white;
+    margin-top: 11px;
+    /* max-width: 270px; */
+}
+
+.row-3-col-1-links{
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family:sf-pro-display_regular;
+    margin-top: .7em;
+    text-align: center;
+    color: white;
 }
 
 .row-3-col-2 .inner-content {
@@ -151,6 +252,33 @@
     background-size: 100% 100%;
     height: 100%;
     text-align: center;
+    padding-top:59px;
+}
+
+.row-3-col-2 .wrapper-content{
+    margin-top:15rem;
+}
+
+.row-3-col-2-subhead{
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;    
+    font-family:sf-pro-display_regular;
+    color:white;
+    padding-top:20px;
+}
+
+.row-3-col-2-links{
+    font-size: 17px;
+    padding-top: 15px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family:sf-pro-display_regular;
+    margin-top: .7em;
+    text-align: center;
+    color:white;
 }
 
 
@@ -280,18 +408,28 @@
 
 
 <!--side by side image-->
-<!--row-1-->
+
+<!-- row-1 -->
 <div class="row">
   <div class="column row-1-col-1">
       <div class="inner-content">
-          <h2>Column 1</h2>
-          <p>Data..</p>
+          <h4 class="row-1-col-1-headline">Buy a Mac or iPad for <br>university. Get&nbsp;AirPods.<sup><a
+                      style="font-size: 0.45em; top: -0.86em;">1</a></sup></h4>
+
+          <a href="#" style="color:rgb(0, 102, 204);font-size: 17px;">Save with education pricing <i
+                  class="fas fa-chevron-right" style="font-size: 12px;"></i></a>
       </div>
   </div>
   <div class="column row-1-col-2">
-      <div class="inner-content">
-          <h2>Column 2</h2>
-          <p>Data..</p>
+      <div class="inner-content" style="color:white;">
+          <img src="images/apple-watch.png" alt="">
+          <h5 class="row-1-col-2-subhead">The future of health is on your&nbsp;wrist.</h5>
+          <div class="row-1-col-2-links">
+              <a class="" href="#" style="color:rgb(0, 102, 204);">Learn more <i class="fas fa-chevron-right"
+                      style="font-size: 12px;"></i></a>
+              <a class="" href="#" style="margin-left:32px; color:rgb(0, 102, 204);">Buy <i
+                      class="fas fa-chevron-right" style="font-size: 12px;"></i></a>
+          </div>
       </div>
   </div>
 </div>
@@ -300,14 +438,27 @@
 <div class="row">
   <div class="column row-2-col-1">
       <div class="inner-content">
-          <h2>Column 1</h2>
-          <p>Data..</p>
+          <h4 class="row-1-col-1-headline">iMac</h4>
+          <h5 class="row-2-col-1-subhead">Say hello.</h5>
+          <div class="row-2-col-1-links">
+              <a class="" href="#" style="color:rgb(0, 102, 204);">Learn more <i class="fas fa-chevron-right"
+                      style="font-size: 12px;"></i></a>
+              <a class="" href="#" style="margin-left:32px; color:rgb(0, 102, 204);">Buy <i
+                      class="fas fa-chevron-right" style="font-size: 12px;"></i></a>
+          </div>
+
       </div>
   </div>
   <div class="column row-2-col-2">
-      <div class="inner-content">
-          <h2>Column 2</h2>
-          <p>Data..</p>
+      <div class="inner-content" style="color:black;">
+          <img src="images/airtag.png" alt="">
+          <h5 class="row-2-col-2-subhead">Lose your knack for losing things</h5>
+          <div class="row-2-col-2-links">
+              <a class="" href="#" style="color:rgb(0, 102, 204);">Learn more <i class="fas fa-chevron-right"
+                      style="font-size: 12px;"></i></a>
+              <a class="" href="#" style="margin-left:32px; color:rgb(0, 102, 204);">Buy <i
+                      class="fas fa-chevron-right" style="font-size: 12px;"></i></a>
+          </div>
       </div>
   </div>
 </div>
@@ -316,19 +467,31 @@
 <div class="row">
   <div class="column row-3-col-1">
       <div class="inner-content">
-          <h2>Column 1</h2>
-          <p>Data..</p>
+          <img src="images/music.png" alt="">
+          <h5 class="row-3-col-1-subhead" role="presentation">Introducing Spatial Audio <br> with Dolby Atmos.
+          </h5>
+          <div class="row-3-col-1-links">
+              <a>Listen now</a><sup><a>2</a></sup><span></span>
+              <span>↗</span>
+          </div>
       </div>
   </div>
   <div class="column row-3-col-2">
       <div class="inner-content">
-          <h2>Column 2</h2>
-          <p>Data..</p>
+          <img src="images/tv.png" alt="">
+          <div class="wrapper-content">
+              <img src="images/tv-promo.png" style="width: 116px;
+              height: 50px;" alt="">
+              <br>
+              <img src="images/tv-promo-2.png" style="padding-top:16px;" alt="">
+              <h6 class="row-3-col-2-subhead">Every family has its own&nbsp;language.</h6>
+              <div class="row-3-col-2-links">
+                  <a>Stream now</a>
+              </div>
+          </div>
       </div>
   </div>
 </div>
-
-
 
 
 <!--FOOTER SECTION-->
